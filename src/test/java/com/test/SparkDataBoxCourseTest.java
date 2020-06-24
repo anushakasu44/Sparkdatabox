@@ -1,0 +1,117 @@
+package com.test;
+
+
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import Com.Util.BaseClass;
+import Com.Util.DataDriven;
+import pages.CoursePreview;
+import pages.GetEnrolledPage;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.MyCourses;
+import pages.SignUp;
+
+public class SparkDataBoxCourseTest extends BaseClass{
+	HomePage hp;
+	SignUp Su;
+	CoursePreview CP;
+	GetEnrolledPage gt;
+	LoginPage lpp;
+	MyCourses mc;
+	
+	@BeforeMethod
+	public void setUp() {
+		BaseClass bas=BaseClass.GetInstance();
+		bas.openBrowser();
+		hp=new HomePage();
+		
+	}
+	@DataProvider
+	public String[][] getQueryData() throws Exception {
+		String[][] data=DataDriven.Query();
+		return data;
+	}
+	
+	@Test(priority=1,dataProvider="getQueryData")
+	public void SearchQueryTest(String query,String validatequery) {
+		String act=hp.verifytitle();
+		Assert.assertEquals(act, "Online Courses with Certificate of Completion | SparkDatabox");
+		hp.searchcourse(query);
+		hp.validateQuerySearch(validatequery);
+		
+	}
+	@DataProvider
+	public String[][] getData() throws Exception {
+		String[][] data2=DataDriven.getregisteredData();
+		return data2;
+		
+	}
+	@Test(priority=2,dataProvider="getData")
+	public void userSignupTest(String fname,String lname,String eml,String pass,String cpass) {
+		Su=hp.clickOnSignUp();
+		Su.registration(fname, lname, eml, pass, cpass);
+	}
+	
+	@DataProvider
+	public String[][] login() throws Exception {
+		String[][] data3=DataDriven.loginData();
+		return data3;
+		
+	}
+	@Test(priority=3,dataProvider="login")
+	 public void verifyLoginTest(String email,String password,String specificcourse,String validatecourse,String validateaddedcourse) {
+		lpp=hp.clickOnLogin();
+		hp=lpp.verifylogin(email, password);
+		hp.searchSpecificCourse(specificcourse);
+		gt=hp.searchfreecourse(validatecourse);
+		mc= gt.clickOnGetEnrolled();
+        mc.validateAddedCourse(validateaddedcourse);
+      
+	}
+        @DataProvider
+    	public String[][] couponFreeCourse() throws Exception {
+    		String[][] data3=DataDriven.freecouponCourse();
+    		return data3;
+    		
+    	}
+		@Test(priority=4,dataProvider="couponFreeCourse")
+		public void validateFreeCouponforPythonCourseTest(String query,String coupon,String validateaddedcourse) {
+			hp.searchcourse(query);
+			gt=hp.clickOnfreecouponcours();
+			mc=gt.clickOnApplyCoupon(coupon);
+			mc.validateAddedCourse(validateaddedcourse);
+			
+		
+	}
+
+//        @DataProvider
+//    	public String[][] selfPacedAndLive() throws Exception {
+//    		String[][] data4=DataDriven.TopSelfPacedAndLiveCoursesTest();
+//    		return data4;
+//    		
+//    	}
+//		@Test(priority=5,dataProvider="selfPacedAndLive")
+//		public void validateTopSelfPacedAndLiveCoursesTest(String LiveAndSelfPaced,String coupon,String validateaddedcourse) {
+//			gt=hp.selectLiveAndSelfPacedCourses(LiveAndSelfPaced);
+//			mc=gt.clickOnApplyCoupon(coupon);
+//			mc.validateAddedCourse(validateaddedcourse);
+//			
+//		
+//	}
+		
+	
+	
+	@AfterMethod
+	public void TearDown() {
+		if(driver!=null) 
+		driver.quit();
+	}
+	
+}

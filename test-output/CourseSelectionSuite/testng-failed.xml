@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="4" name="Failed suite [CourseSelectionSuite]">
+  <parameter name="course" value="javascript"/>
+  <test name="CourseSelectionTest(failed)">
+    <parameter name="course" value="javascript"/>
+    <classes>
+      <class name="Test.CourseSelectionTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateCourseTitleTest" invocation-numbers="0"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- Test.CourseSelectionTest -->
+    </classes>
+  </test> <!-- CourseSelectionTest(failed) -->
+</suite> <!-- Failed suite [CourseSelectionSuite] -->
