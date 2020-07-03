@@ -1,0 +1,1 @@
+{"uuid":"b5a06c5a-05a0-4091-b219-3b5fb8a910db","name":"com.test.SparkDataBoxCourseTest.setUp","description":"","start":1593621400826,"stop":1593621413615,"children":["527d0b42-7ff7-4afd-bf1c-afbf7bfe4ca5"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1593621400826,"stop":1593621413615}]}

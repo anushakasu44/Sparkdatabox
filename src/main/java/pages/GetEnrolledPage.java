@@ -26,8 +26,11 @@ public class GetEnrolledPage extends BaseClass{
 	@FindBy(xpath="//div[@class='schedule-btn schedule-btn-inline']//a")
 	WebElement alreadypurchasd;
 	
-	@FindBy(xpath="//a[text()='Get Enrolled']")
+	@FindBy(xpath="(//a[text()='Enroll Now'])[1]")
 	WebElement enrollnow;
+	
+	@FindBy(xpath="//a[text()='Get Enrolled']")
+	WebElement getEnroll;
 
 	public GetEnrolledPage() {
 		PageFactory.initElements(driver, this);
@@ -47,12 +50,27 @@ public class GetEnrolledPage extends BaseClass{
 	public MyCourses clickOnApplyCoupon(String coupon) {
 		if(applycoupon.isDisplayed()) {
 			applycoupon.click();
-		coupontextbox.sendKeys(coupon);
-		apply.click();
+		    coupontextbox.sendKeys(coupon);
+		    apply.click();
+		    getEnroll.click();
+		    System.out.println("Coupon sucessfully applied");
+		    }
+		else if(alreadypurchasd.isDisplayed()){
+				System.out.println("Already purchased");
+				alreadypurchasd.click();
+			}
+		
+		
+		return new MyCourses();
+	}
+	
+	public PaypalLogo clickOnEnrollNow() {
+		
+		
 		enrollnow.click();
 		
-		}
-		return new MyCourses();
+		
+		return new PaypalLogo();
 	}
 	
 	

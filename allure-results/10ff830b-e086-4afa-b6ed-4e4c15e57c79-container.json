@@ -1,0 +1,1 @@
+{"uuid":"10ff830b-e086-4afa-b6ed-4e4c15e57c79","name":"com.test.SparkDataBoxCourseTest.TearDown","description":"","start":1593621332513,"stop":1593621333514,"children":["c67f4961-1051-416b-a85e-6615baee4c55"],"afters":[{"name":"TearDown","status":"passed","stage":"finished","description":"","start":1593621332514,"stop":1593621333514}]}

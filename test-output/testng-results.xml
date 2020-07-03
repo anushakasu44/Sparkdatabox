@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="132228" started-at="2020-06-24T02:36:32Z" finished-at="2020-06-24T02:38:44Z">
+  <suite name="Default suite" duration-ms="99642" started-at="2020-07-02T03:21:52Z" finished-at="2020-07-02T03:23:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="132228" started-at="2020-06-24T02:36:32Z" finished-at="2020-06-24T02:38:44Z">
+    <test name="Default test" duration-ms="99642" started-at="2020-07-02T03:21:52Z" finished-at="2020-07-02T03:23:32Z">
       <class name="com.test.SparkDataBoxCourseTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.SparkDataBoxCourseTest@6e6c3152]" name="setUp" is-config="true" duration-ms="16848" started-at="2020-06-23T22:36:33Z" finished-at="2020-06-23T22:36:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.SparkDataBoxCourseTest@6293abcc]" name="setUp" is-config="true" duration-ms="15896" started-at="2020-07-01T23:21:53Z" finished-at="2020-07-01T23:22:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyLoginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.test.SparkDataBoxCourseTest@6e6c3152]" name="verifyLoginTest" duration-ms="59936" started-at="2020-06-23T22:36:50Z" data-provider="login" finished-at="2020-06-23T22:37:50Z">
+        <test-method status="FAIL" signature="validateTopSelfPacedAndLiveCoursesTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.test.SparkDataBoxCourseTest@6293abcc]" name="validateTopSelfPacedAndLiveCoursesTest" duration-ms="33267" started-at="2020-07-01T23:22:09Z" data-provider="selfPacedAndLive" finished-at="2020-07-01T23:22:42Z">
           <params>
             <param index="0">
               <value>
@@ -25,42 +25,87 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Develop RESTful Java Web Services ]]>
+                <![CDATA[Master Ethical Hacking]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Develop RESTful Java Web Services ]]>
+                <![CDATA[4012 8888 8888 1881]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Develop RESTful Java Web Services ]]>
+                <![CDATA[522]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[montreal]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[newyork]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10030]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[3453453456]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[tesNG12@gmail.com]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Get Enrolled'])[position()=1]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='paypal-button-label-container']//img[2]"}
   (Session info: chrome=80.0.3987.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'DESKTOP-HBPR9D6', ip: '192.168.2.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir11540_756304529}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60552}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 9880ae50744fe43870d1e1385017e70a
-*** Element info: {Using=xpath, value=(//a[text()='Get Enrolled'])[position()=1]}]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir7576_193857136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57617}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 8a8d506f2578066e6916f79bb3383e9e
+*** Element info: {Using=xpath, value=//div[@class='paypal-button-label-container']//img[2]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[text()='Get Enrolled'])[position()=1]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='paypal-button-label-container']//img[2]"}
   (Session info: chrome=80.0.3987.87)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'DESKTOP-HBPR9D6', ip: '192.168.2.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir11540_756304529}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60552}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 9880ae50744fe43870d1e1385017e70a
-*** Element info: {Using=xpath, value=(//a[text()='Get Enrolled'])[position()=1]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir7576_193857136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57617}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 8a8d506f2578066e6916f79bb3383e9e
+*** Element info: {Using=xpath, value=//div[@class='paypal-button-label-container']//img[2]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -80,13 +125,28 @@ Session ID: 9880ae50744fe43870d1e1385017e70a
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at com.sun.proxy.$Proxy9.findElement(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at pages.GetEnrolledPage.clickOnGetEnrolled(GetEnrolledPage.java:37)
-	at com.test.SparkDataBoxCourseTest.verifyLoginTest(SparkDataBoxCourseTest.java:74)
+	at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:820)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:373)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:165)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:150)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:580)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy9.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:218)
+	at Com.Util.BaseClass.ScrollElementIntoView(BaseClass.java:84)
+	at pages.PaypalLogo.clickOnpaypal(PaypalLogo.java:20)
+	at com.test.SparkDataBoxCourseTest.validateTopSelfPacedAndLiveCoursesTest(SparkDataBoxCourseTest.java:113)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -117,51 +177,110 @@ Session ID: 9880ae50744fe43870d1e1385017e70a
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.SparkDataBoxCourseTest@6e6c3152]" name="TearDown" is-config="true" duration-ms="1381" started-at="2020-06-23T22:37:50Z" finished-at="2020-06-23T22:37:51Z">
+        </test-method> <!-- validateTopSelfPacedAndLiveCoursesTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.SparkDataBoxCourseTest@6293abcc]" name="TearDown" is-config="true" duration-ms="1435" started-at="2020-07-01T23:22:43Z" finished-at="2020-07-01T23:22:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.SparkDataBoxCourseTest@6e6c3152]" name="setUp" is-config="true" duration-ms="14198" started-at="2020-06-23T22:37:51Z" finished-at="2020-06-23T22:38:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.SparkDataBoxCourseTest@6293abcc]" name="setUp" is-config="true" duration-ms="13458" started-at="2020-07-01T23:22:44Z" finished-at="2020-07-01T23:22:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="validateFreeCouponforPythonCourseTest(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.test.SparkDataBoxCourseTest@6e6c3152]" name="validateFreeCouponforPythonCourseTest" duration-ms="37028" started-at="2020-06-23T22:38:05Z" data-provider="couponFreeCourse" finished-at="2020-06-23T22:38:42Z">
+        <test-method status="FAIL" signature="validateTopSelfPacedAndLiveCoursesTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.test.SparkDataBoxCourseTest@6293abcc]" name="validateTopSelfPacedAndLiveCoursesTest" duration-ms="33381" started-at="2020-07-01T23:22:57Z" data-provider="selfPacedAndLive" finished-at="2020-07-01T23:23:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Python Complete reference : Go from Beginner to Advanced]]>
+                <![CDATA[tesNG1234e@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[FRWEBM4]]>
+                <![CDATA[test@1234t]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Python Complete reference : Go from Beginner to Advanced]]>
+                <![CDATA[Apache Spark Online Training]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4012 8888 8888 1881]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[522]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[montreal]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[newyork]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10030]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[3453453456]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[tesNG12@gmail.com]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='paypal-button-label-container']//img[2]"}
   (Session info: chrome=80.0.3987.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'DESKTOP-HBPR9D6', ip: '192.168.2.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir2052_29848267}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60906}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: cf56a4506457a004bdf017acbf1023b3]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir14832_1853124921}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57716}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 5b72290195061712c58c0005e83a1280
+*** Element info: {Using=xpath, value=//div[@class='paypal-button-label-container']//img[2]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='paypal-button-label-container']//img[2]"}
   (Session info: chrome=80.0.3987.87)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'DESKTOP-HBPR9D6', ip: '192.168.2.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir2052_29848267}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60906}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: cf56a4506457a004bdf017acbf1023b3
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\anush\AppData\Local\Temp\scoped_dir14832_1853124921}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57716}, acceptInsecureCerts=false, browserVersion=80.0.3987.87, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 5b72290195061712c58c0005e83a1280
+*** Element info: {Using=xpath, value=//div[@class='paypal-button-label-container']//img[2]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -172,23 +291,37 @@ Session ID: cf56a4506457a004bdf017acbf1023b3
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:99)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:350)
-	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:373)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy9.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:51)
+	at com.google.common.collect.Iterators$6.transform(Iterators.java:820)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:373)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:165)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:150)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:580)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
-	at pages.GetEnrolledPage.clickOnApplyCoupon(GetEnrolledPage.java:50)
-	at com.test.SparkDataBoxCourseTest.validateFreeCouponforPythonCourseTest(SparkDataBoxCourseTest.java:88)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy9.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:218)
+	at Com.Util.BaseClass.ScrollElementIntoView(BaseClass.java:84)
+	at pages.PaypalLogo.clickOnpaypal(PaypalLogo.java:20)
+	at com.test.SparkDataBoxCourseTest.validateTopSelfPacedAndLiveCoursesTest(SparkDataBoxCourseTest.java:113)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -216,11 +349,11 @@ Session ID: cf56a4506457a004bdf017acbf1023b3
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateFreeCouponforPythonCourseTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.SparkDataBoxCourseTest@6e6c3152]" name="TearDown" is-config="true" duration-ms="1458" started-at="2020-06-23T22:38:42Z" finished-at="2020-06-23T22:38:44Z">
+        </test-method> <!-- validateTopSelfPacedAndLiveCoursesTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.SparkDataBoxCourseTest@6293abcc]" name="TearDown" is-config="true" duration-ms="1039" started-at="2020-07-01T23:23:31Z" finished-at="2020-07-01T23:23:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

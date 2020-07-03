@@ -5,10 +5,9 @@
     <classes>
       <class name="com.test.SparkDataBoxCourseTest">
         <methods>
-          <include name="validateFreeCouponforPythonCourseTest" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="validateTopSelfPacedAndLiveCoursesTest" invocation-numbers="0 1"/>
           <include name="TearDown"/>
-          <include name="verifyLoginTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.test.SparkDataBoxCourseTest -->
     </classes>

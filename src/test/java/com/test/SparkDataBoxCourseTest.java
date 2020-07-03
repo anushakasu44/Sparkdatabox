@@ -16,7 +16,10 @@ import pages.GetEnrolledPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.MyCourses;
+import pages.PayPalGuestCheckOut;
+import pages.PaypalLogo;
 import pages.SignUp;
+import pages.paymentDebitOrCredit;
 
 public class SparkDataBoxCourseTest extends BaseClass{
 	HomePage hp;
@@ -25,6 +28,9 @@ public class SparkDataBoxCourseTest extends BaseClass{
 	GetEnrolledPage gt;
 	LoginPage lpp;
 	MyCourses mc;
+	PaypalLogo pp;
+	paymentDebitOrCredit pdc;
+	PayPalGuestCheckOut ppgo;
 	
 	@BeforeMethod
 	public void setUp() {
@@ -32,7 +38,7 @@ public class SparkDataBoxCourseTest extends BaseClass{
 		bas.openBrowser();
 		hp=new HomePage();
 		
-	}
+}
 	@DataProvider
 	public String[][] getQueryData() throws Exception {
 		String[][] data=DataDriven.Query();
@@ -58,7 +64,6 @@ public class SparkDataBoxCourseTest extends BaseClass{
 		Su=hp.clickOnSignUp();
 		Su.registration(fname, lname, eml, pass, cpass);
 	}
-	
 	@DataProvider
 	public String[][] login() throws Exception {
 		String[][] data3=DataDriven.loginData();
@@ -82,29 +87,33 @@ public class SparkDataBoxCourseTest extends BaseClass{
     		
     	}
 		@Test(priority=4,dataProvider="couponFreeCourse")
-		public void validateFreeCouponforPythonCourseTest(String query,String coupon,String validateaddedcourse) {
+		
+		public void validateFreeCouponforPythonCourseTest(String username,String pass,String query,String coupon,String validatecours ){
+			lpp=hp.clickOnLogin();
+			hp=lpp.verifylogin(username, pass);
 			hp.searchcourse(query);
 			gt=hp.clickOnfreecouponcours();
 			mc=gt.clickOnApplyCoupon(coupon);
-			mc.validateAddedCourse(validateaddedcourse);
-			
+			mc.validateAddedCourse(validatecours);
+				}
+
+
+    @DataProvider
+	public String[][] selfPacedAndLive() throws Exception {
+		String[][] data4=DataDriven.TopSelfPacedAndLiveCoursesTest();
+		return data4;
 		
 	}
-
-//        @DataProvider
-//    	public String[][] selfPacedAndLive() throws Exception {
-//    		String[][] data4=DataDriven.TopSelfPacedAndLiveCoursesTest();
-//    		return data4;
-//    		
-//    	}
-//		@Test(priority=5,dataProvider="selfPacedAndLive")
-//		public void validateTopSelfPacedAndLiveCoursesTest(String LiveAndSelfPaced,String coupon,String validateaddedcourse) {
-//			gt=hp.selectLiveAndSelfPacedCourses(LiveAndSelfPaced);
-//			mc=gt.clickOnApplyCoupon(coupon);
-//			mc.validateAddedCourse(validateaddedcourse);
-//			
-//		
-//	}
+	@Test(priority=5,dataProvider="selfPacedAndLive")
+	public void validateTopSelfPacedAndLiveCoursesTest(String username,String password,String LiveAndSelfPaced,String cno,String edate,String cv,String fnam,String lnam,String add,String cit,String stat,String pcode,String tele,String emai) {
+	    lpp=hp.clickOnLogin();
+		hp=lpp.verifylogin(username, password);
+		gt=hp.selectLiveAndSelfPacedCourses(LiveAndSelfPaced);
+		pp=gt.clickOnEnrollNow();
+		pdc=pp.clickOnpaypal();
+		ppgo=pdc.clickOndebitOrcredit();
+		ppgo.clickOnguestCheckout(cno, edate, cv, fnam, lnam, add, cit, stat, pcode, tele, emai);			
+}
 		
 	
 	

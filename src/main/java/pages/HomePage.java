@@ -129,9 +129,8 @@ public class HomePage extends BaseClass {
 	public GetEnrolledPage selectLiveAndSelfPacedCourses(String LiveAndSelfPaced) {
 		for(int i=0;i<liveandselfpacedcourses.size();i++) {
 			if(liveandselfpacedcourses.get(i).getText().equalsIgnoreCase(LiveAndSelfPaced)) {
-				Boolean bool=liveandselfpacedcourses.get(i).isDisplayed();
-				Assert.assertTrue(bool);
-				liveandselfpacedcourses.get(i).click();
+				WebElement elee=liveandselfpacedcourses.get(i);
+				javaScriptClick(elee);
 				
 			}
 		}
